@@ -60,9 +60,14 @@ main {
 	color: #fff;
 	font-size: 21px;
 	font-weight: 500;
+	transition: .5s;
 }
 #form > button:hover {
 	cursor: pointer;
+	transform: scale(1.03);
+	color: #ff8c00;
+	background-color: #fff;
+	border: 2px solid #ff8c00;
 }
 #form > button[data-type="Caps Lock"] {
 	width: 140px;
