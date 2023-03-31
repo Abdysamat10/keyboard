@@ -51,10 +51,11 @@ form.addEventListener('click', (event) => {
         return;
     }
     if (type === 'Language') {
+        language();
+    }
+    function language() {
         form.innerHTML = '';
-		
         currentLanguage = currentLanguage === ENGLISH ? RUSSIAN : ENGLISH;
-
         currentLanguage.split('').forEach((char) => {
             form.innerHTML += `<button data-type="letter">${char}</button>`;
         });
